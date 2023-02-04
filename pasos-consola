@@ -1,0 +1,16 @@
+git init
+git status
+touch secreto.txt
+ls
+git status
+git add -A
+git status
+git add -A
+git status
+rm --cached .gitignore
+git status
+git rm --cached .gitignor
+git status
+git historu¡y
+git history
+history
