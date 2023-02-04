@@ -1,16 +1,71 @@
+git status
 git init
 git status
-touch secreto.txt
-ls
+git add -A
+git status
+git add -m "Añadiendo archivos"
+git status
+git add -m "Añadiendo los primeros archivos"
+git log
+git init
+git add -m "Añadiendo los primeros archivos"
+git status
+git init
+git add -A
+git status
+git add -m "Añadiendo los primeros archivos"
+git commit -m "Añadiendo los primeros archivos"
+git status
+git add -A
+git commit -m "Añadiendo los primeros archivos y pasos"
+git status
+git add -A
+git commit -m "Añadiendo los primeros archivos y pasos2"
+git status
+git diff
+git log
+history
+git status
+git add -A
+git commit -m "Añadiendo los archivos y pasos a menubase"
+git status
+git commit -m "Añadiendo los archivos y pasos a menubase2"
+git add -A
+git status
+git commit -m "Añadiendo los archivos y pasos a menubase3"
+git status
+git branch minuevafeature
+git status
+git ststus
+git status
+git branch
+git add -A
+git status
+git branch minuevafeature
+git branch
+git checkout minuevafeature
+git branch
+git status
+git commit -m "Primer vommit  nueva rama a minuevafeature"
 git status
 git add -A
 git status
+git commit -m "Segundo commit  nueva rama a minuevafeature"
+git status
+git branch -a
+git status
 git add -A
+git commit -m "Tercero commit  nueva rama a minuevafeature"
 git status
-rm --cached .gitignore
+git checkout master
+git log
 git status
-git rm --cached .gitignor
+git branch --merged
+git merge  minuevafeature
 git status
-git historu¡y
-git history
+git add -A
+git commit -m "Juntando rama creada a la master""
+git commit -m "Juntando rama creada a la master"
+git status
+git merge  minuevafeature
 history
