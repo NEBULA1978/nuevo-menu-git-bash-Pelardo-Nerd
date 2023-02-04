@@ -53,13 +53,13 @@ while :; do
         date
         read foo
         ;;
-        5)
+    5)
         echo "Verificando el estado de Git"
         git status
         read foo
         ;;
     6)
-        echo "Añadiendo cambios de varios archivos a Git para crear un commit después"
+        echo "Añadiendo cambios de varios archivos a Git para crear un commit después git add -A"
         git add .
         read foo
         ;;
@@ -70,7 +70,9 @@ while :; do
         ;;
     8)
         echo "Creando un commit cada vez que se añade un cambio en algún archivo"
-        git config --global alias.autocommit '!git add . && git commit -m "Automatic Commit"'
+        echo -n "Introduce el nombre del commit a crear: "
+        read repo_commit
+        git clone repo_commit
         read foo
         ;;
     9)
