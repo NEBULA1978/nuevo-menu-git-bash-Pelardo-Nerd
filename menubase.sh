@@ -27,6 +27,8 @@ while :; do
     echo "19. Cambiar de una rama nuevafeature a master con git checkout master"
     echo "20. Eliminar una rama del repositorio externo con git push --delete nuevafeature"
     echo "21. Eliminar una rama de mi PC de forma local con git branch -d nuevafeature"
+    echo "22. Modificar el nombre del commit con git commit --amend"
+    echo "23. Archivos modificados en cada commit con  git log --stat"
 
 
     echo "4. Salir"
@@ -143,6 +145,16 @@ while :; do
     21)
         echo "Eliminar una rama de mi PC de forma local con git branch -d nuevafeature"
         git branch -d nuevafeature
+        read foo
+        ;;
+    22)
+        echo "Modificar el nombre del commit con git commit --amend"
+        git commit --amend
+        read foo
+        ;;
+    23)
+        echo "Archivos modificados en cada commit con  git log --stat"
+        git log --stat
         read foo
         ;;
 
