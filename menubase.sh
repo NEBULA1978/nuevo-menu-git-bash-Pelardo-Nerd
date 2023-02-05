@@ -29,6 +29,10 @@ while :; do
     echo "21. Eliminar una rama de mi PC de forma local con git branch -d nuevafeature"
     echo "22. Modificar el nombre del commit con git commit --amend"
     echo "23. Archivos modificados en cada commit con  git log --stat"
+    echo "24. Ver los commits: el hash la fecha y el autor"
+    echo "25. Cambiar de commit"
+    echo "26. Volver al último commit"
+    echo "27. Ingresa el nombre del archivo a añadir:"
 
 
     echo "4. Salir"
@@ -157,6 +161,28 @@ while :; do
     23)
         echo "Archivos modificados en cada commit con  git log --stat"
         git log --stat
+        read foo
+        ;;
+    24)
+        echo "Ver los commits: el hash la fecha y el autor"
+         git log --pretty=format:"%h %ad %s %an" --date=short
+        read foo
+        ;;
+    25)
+        echo "Ingresa el hash del commit al cual deseas cambiar:"
+       read hash
+        git checkout $hash
+        read foo
+        ;;
+    26)
+        echo "Volver al último commit"
+        git checkout master
+        read foo
+        ;;
+    27)
+        echo "Ingresa el nombre del archivo a añadir:"
+        read file
+        git add $file
         read foo
         ;;
 
